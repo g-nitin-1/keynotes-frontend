@@ -25,7 +25,7 @@ function Notes() {
 
     let userEmail = checkCurrentUser();
     // alert("http://localhost:5000/"+userEmail+"/notes");
-    const link = "https://keynotes-api.onrender.com/";
+    const link = "https://bujji-9j6a.onrender.com/";
     fetch(link+userEmail+"/notes")
     .then((res) => res.json())
     .then((data) =>{
