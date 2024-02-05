@@ -1,0 +1,350 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #ece5c7;
+  padding: 0 16px;
+  background-image: url("https://www.transparenttextures.com/patterns/cutcube.png");
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/*  Header  */
+
+header {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header *{
+  display: inline-block;
+}
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+.navbar {
+  display:inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width:75%;
+}
+
+.links {
+  margin: 10px 50px 0;
+}
+.links * {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 500;
+  font-size: 1.3em;
+  margin: 1px 20px 0;
+  text-decoration: none;
+}
+
+.links a.active{
+  color: black;
+  text-decoration: underline;
+}
+
+.links *:hover{
+  color: black;
+}
+
+
+.profile {
+  position:absolute;
+  right:5%;
+}
+
+.registerlinks *{
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 500;
+  font-size: 1.3em;
+  margin: 1px 3px;
+  text-decoration: none;
+}
+
+.registerlinks a.active{
+  color: black;
+  text-decoration: underline;
+}
+
+.registerlinks *:hover{
+  color: black;
+}
+
+.registerlinks img{
+  height:1.5em;
+  width:0.8em;
+  position: relative;
+  top: 10px;
+  padding: 2px;
+}
+/* Footer */
+
+footer {
+  position: relative;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+
+/* Notes */
+
+.notes{
+  overflow: auto;
+}
+
+
+/* Note */
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Create area */
+
+form.create-note {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form.create-note input,
+form.create-note textarea {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  /* font-family: inherit; */
+  resize: none;
+}
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+
+/* Home page */
+
+.home {
+  margin-top:4%;
+}
+
+.home h1,h3,p{
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  margin-top:3%;
+}
+
+.home h1{
+  font-size: 4rem;
+}
+
+.home h3{
+  font-size: 2.8rem;
+}
+
+.home p{
+  
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  
+}
+
+
+/* Register form */
+
+.registerform{
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5% auto 2%;
+  background-color: #F8F4EC;
+  padding: 5%;
+  padding-bottom: 1%;
+  width: 350px;
+  max-width: 350px;
+  border-radius: 20px;
+}
+
+.registerform h1{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 3em;
+  text-align: center;
+  margin: 2% 0 8%;
+}
+
+.registerform p{
+  color: rgba(17, 61, 17, 0.856);
+  background-color: rgb(174, 233, 248);
+  font-size: 1em;
+  padding: 20px 0;
+  margin: 10px 0 50px;
+}
+
+.registerformdetails *{
+  text-align: left;
+}
+
+.registerformdetails label{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.5em;
+  margin: 7px 0;
+}
+
+.registerformdetails #forgotpassword{
+  color: rgb(7, 77, 95);
+  font-size: 1em;
+  position: relative;
+  left: 50%;
+  text-decoration: none;
+}
+.registerforminput{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0 ;
+  border-style: none none solid ;
+  border-color: #3d49497e;
+  background-color: rgba(183, 188, 189, 0.884);
+}
+
+.registerforminput input{
+  font-size: 1.2em;
+  border-style: none none none solid;
+  border-color: #6a7575b9;
+  background-color: rgba(183, 188, 189, 0.884);
+  width:100%;
+  height: 2.1em;
+  text-align:start;
+  padding-left: 4px;
+}
+
+.registerforminput input:focus{
+  outline: none;
+}
+.registerforminput svg{
+  height: 1.7em;
+  margin: 0 5px 0 5px;
+}
+
+.registerbtn {
+  background: #d9a234;
+  background-image: -webkit-linear-gradient(top, #d9a234, #b83b2b);
+  background-image: -moz-linear-gradient(top, #d9a234, #b83b2b);
+  background-image: -ms-linear-gradient(top, #d9a234, #b83b2b);
+  background-image: -o-linear-gradient(top, #d9a234, #b83b2b);
+  background-image: linear-gradient(to bottom, #d9a234, #b83b2b);
+  -webkit-border-radius: 21;
+  -moz-border-radius: 21;
+  border-radius: 21px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border-style: none;
+  display: block;
+  margin: 40px auto 10px;
+}
+
+.registerbtn:hover {
+  background: #f6fc3c;
+  background-image: -webkit-linear-gradient(top, #f6fc3c, #d95534);
+  background-image: -moz-linear-gradient(top, #f6fc3c, #d95534);
+  background-image: -ms-linear-gradient(top, #f6fc3c, #d95534);
+  background-image: -o-linear-gradient(top, #f6fc3c, #d95534);
+  background-image: linear-gradient(to bottom, #f6fc3c, #d95534);
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .links{
+    margin-left: 0;
+  }
+
+  .links *{
+    width:100%;
+  }
+
+  .registerlinks{
+    margin-left: 15px;
+  }
+
+  .navbar h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+}
