@@ -41,7 +41,7 @@ function CreateArea(props) {
     };
     // https://keynotes-api.onrender.com/notes
     // http://localhost:5000/notes
-    await fetch("https://keynotes-api.onrender.com/"+userEmail+"/notes",{
+    await fetch("https://bujji-9j6a.onrender.com/"+userEmail+"/notes",{
       method: "post",
       body: JSON.stringify(Note),
       headers:{
