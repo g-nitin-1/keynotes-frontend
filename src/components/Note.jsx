@@ -6,7 +6,7 @@ function Note(props) {
 
   const {checkCurrentUser}=useAuth();
   // const link = "http://localhost:5000/"
-  const link = "https://keynotes-api.onrender.com/"
+  const link = "https://bujji-9j6a.onrender.com/"
   async function deleteNote(){
 
     let userEmail=checkCurrentUser();
